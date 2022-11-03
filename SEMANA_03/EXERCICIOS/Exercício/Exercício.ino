@@ -144,9 +144,10 @@ void loop() {
 
     int size = sizeof(values)/sizeof(values[0]);
 
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < saves; i++) {
       LEDsBUZZER(values[i]);
       delay(1000);
+      values[i] = NULL;
       
     }
 
